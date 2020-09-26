@@ -1,40 +1,14 @@
-document.getElementById("submit_btn").addEventListener("click", fibonacci);
-
-
+document.getElementById("btn").addEventListener(
+    "click", fibonacci);
 function fibonacci() {
-
-let num = document.getElementById("number").value;
-
-var fib =[0,1] ;
-
-var a = fib[0];
-
-var b = fib[1];
-
-var z;
-
-
-for (i = 2 ; i <num ; i++) {
-
-    z = a+b;
-    a = b;
-    b = z;
-    fib.push(z);
-
+    const n = document.getElementById("number").value;
+    var fibo = [1, 1];
+    for (i = 0; i < n-2; i++) {
+        fibo.push(fibo[i] + fibo[i+1]);
+    }
+    if (isNaN(n) || n < 1) {
+        document.getElementById("result").innerHTML = "Please check your input!";
+    } else {
+        document.getElementById("result").innerHTML = n + ". element of Fibonacci Sequence is " + fibo[n-1];
+    }
 }
-if (num==0){
-    document.getElementById("output").innerHTML = "PLS tr again";
-}
-
-else {
-    document.getElementById("output").innerHTML= num +"fibonacci degeri"+fib[num-1];
-}
-
-
-}
-
-
-
-   
-
-
