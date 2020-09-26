@@ -10,5 +10,6 @@ function fibonacci() {
         document.getElementById("result").innerHTML = "Please check your input!";
     } else {
         document.getElementById("result").innerHTML = n + ". element of Fibonacci Sequence is " + fibo[n-1];
+        document.getElementById("result_1").innerHTML = n + ". element of Fibonacci Sequence is " + fibo;
     }
 }

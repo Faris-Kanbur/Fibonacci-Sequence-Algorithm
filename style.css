@@ -9,3 +9,10 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+#result,#result_1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: large;
+    padding: 10px;
+}
