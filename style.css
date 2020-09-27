@@ -46,6 +46,7 @@ h1 {
 }
 
 #result , #result_1 {
+    color: white;
     height: 20px;
     font-size: large;
     margin: 30px;
